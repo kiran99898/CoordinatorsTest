@@ -29,9 +29,10 @@ class MainCoordinator: Coordinators {
         
     }
     
-    func buySuscription(){
+    func buySuscription(tit: String){
         let vc = BuyVC.instantiate()
         vc.coordinator = self
+        vc.titl = tit
         nav.pushViewController(vc, animated: true)
         
     }

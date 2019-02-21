@@ -12,12 +12,20 @@ class ViewController: UIViewController, Storyboarded{
 var coordinator: MainCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
 
     @IBAction func btnTapped(_ sender: UIButton) {
         if sender.tag == 0 {
-            coordinator?.buySuscription()
+            coordinator?.buySuscription(tit: "hy this is data from viewcontroller")
         } else {
             coordinator?.createAccount()
         }

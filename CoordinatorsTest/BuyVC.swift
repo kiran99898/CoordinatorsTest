@@ -10,10 +10,11 @@ import UIKit
 
 class BuyVC: UIViewController, Storyboarded {
     var coordinator: MainCoordinator?
-
+    var titl: String?
+    @IBOutlet weak var titleLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLbl.text = titl
 
-        // Do any additional setup after loading the view.
     }
 }

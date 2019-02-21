@@ -75,6 +75,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rY8-wQ-meF"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="a6H-Wu-BvJ" id="fqc-je-ehY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh8-Z2-4Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQz-M2-OdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="30"/>
+            <point key="canvasLocation" x="2311" y="28"/>
         </scene>
     </scenes>
 </document>
